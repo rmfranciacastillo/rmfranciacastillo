@@ -2,6 +2,6 @@
 - 👀 I’m interested in machine learning and backend development
 - 🌱 I’m currently learning Drupal, python, and machine learning.
 - 💞️ I’m looking to collaborate on open-source project to improve education
-- 📫 How to reach me: rfranciac@gmail.com
+
 
 
