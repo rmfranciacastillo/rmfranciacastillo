@@ -1,0 +1,97 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1838" height="818" viewBox="0 0 1838 818" role="img" aria-labelledby="title desc">
+  <title id="title">03. Stats — GitHub activity</title>
+  <desc id="desc">Cyberpunk terminal dashboard with editable text for stars, contributions, pull requests, and current streak.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00121d"/><stop offset=".55" stop-color="#031b29"/><stop offset="1" stop-color="#00101a"/></linearGradient>
+    <linearGradient id="cardFill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#031b28" stop-opacity=".86"/><stop offset="1" stop-color="#00111c" stop-opacity=".96"/></linearGradient>
+    <linearGradient id="cyanArea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#00eaff" stop-opacity=".34"/><stop offset="1" stop-color="#00eaff" stop-opacity="0"/></linearGradient>
+    <linearGradient id="redArea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ff1b27" stop-opacity=".32"/><stop offset="1" stop-color="#ff1b27" stop-opacity="0"/></linearGradient>
+    <linearGradient id="yellowArea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffdf00" stop-opacity=".28"/><stop offset="1" stop-color="#ffdf00" stop-opacity="0"/></linearGradient>
+    <pattern id="grid" width="90" height="90" patternUnits="userSpaceOnUse"><path d="M90 0H0V90" fill="none" stroke="#0b7187" stroke-opacity=".27" stroke-width="1"/><circle cx="0" cy="0" r="1.6" fill="#10b8d0" fill-opacity=".25"/></pattern>
+    <pattern id="smallGrid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#087087" stroke-opacity=".2" stroke-width=".7"/></pattern>
+    <filter id="glowCyan" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowRed" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="glowYellow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>
+      .mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace}
+      .heading{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace;font-weight:700;letter-spacing:1px}
+      .white{fill:#eaf7ff}.cyan{fill:#00eaff}.red{fill:#ff2029}.yellow{fill:#ffdf00}
+      .card{fill:url(#cardFill);stroke:#00cde8;stroke-width:1.8}
+      .label{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace;font-size:36px;fill:#edf8ff;text-anchor:middle}
+      .value{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace;font-size:76px;font-weight:700;text-anchor:middle}
+      .trend{fill:none;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}
+      .card-visual{opacity:0;animation:card-fade-in .7s ease-out forwards}
+      #stars-card{animation-delay:0s}
+      #contributions-card{animation-delay:.8s}
+      #pull-requests-card{animation-delay:1.6s}
+      #streak-card{animation-delay:2.4s}
+      @keyframes card-fade-in{from{opacity:0}to{opacity:1}}
+      @media (prefers-reduced-motion:reduce){.card-visual{animation:none;opacity:1}}
+    </style>
+  </defs>
+  <!-- Background and frame -->
+  <rect width="1838" height="818" fill="url(#bg)"/>
+  <rect x="10" y="10" width="1818" height="798" fill="url(#grid)"/>
+  <rect x="16" y="16" width="1806" height="786" fill="none" stroke="#00dff7" stroke-width="2.5"/>
+  <path d="M16 70V35L38 16H84 M1754 16H1800L1822 38V82 M16 736V782L38 802H84 M1754 802H1800L1822 780V736" fill="none" stroke="#00eaff" stroke-width="8"/>
+  <path d="M24 74V40L40 24 M1760 24H1796L1814 42 M24 744V778L42 794 M1796 794L1814 776V744" fill="none" stroke="#087fa2" stroke-width="3"/>
+  <path d="M76 134H1750" stroke="#00dff7" stroke-width="1.5" opacity=".8"/>
+  <path d="M24 160H1814" stroke="#0b8299" stroke-width="1" opacity=".25"/>
+  <!-- Header: all wording remains live/editable SVG text -->
+  <text x="76" y="102" class="heading red" font-size="62">03.</text>
+  <text x="242" y="101" class="heading white" font-size="60">STATS</text>
+  <text x="80" y="199" class="mono cyan" font-size="52" font-weight="700">$</text>
+  <text x="139" y="199" class="mono white" font-size="48">gh</text>
+  <text x="224" y="199" class="mono cyan" font-size="48">stats</text>
+  <!-- Card 1: Stars -->
+  <g id="stars-card" class="card-visual">
+    <path class="card" d="M67 390L241 334L416 390V738L405 748H78L67 738Z"/>
+    <path d="M67 390L241 443L416 390" fill="none" stroke="#00dff7" stroke-width="1.7" opacity=".8"/>
+    <path d="M78 406L241 354L405 406V738H78Z" fill="url(#smallGrid)" opacity=".75"/>
+    <path transform="translate(30 0)" d="M181 289L205 246Q208 241 212 247L230 281L267 287Q276 289 269 296L242 321L248 356Q250 366 241 361L210 344L179 362Q170 367 173 356L179 321L153 297Q146 290 157 288Z" fill="#031b2a" stroke="#00bfff" stroke-width="7" stroke-linejoin="round" filter="url(#glowCyan)"/>
+    <text x="241" y="489" class="value cyan"><tspan>0<animate attributeName="textContent" values="0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35;36;37;38;39;40;41;42;43;44;45;46;47;48;49;50;51;52" dur="1.4s" begin="0s" fill="freeze" calcMode="discrete"/></tspan></text>
+    <text x="241" y="557" class="label">Stars</text>
+    <path d="M79 701L93 697L105 682L118 662L131 645L144 650L155 640L168 652L180 663L194 668L207 657L220 665L232 657L245 663L257 647L271 631L283 635L294 624L307 633L319 626L333 635L346 614L359 620L371 602L380 591L392 587L405 612V738H79Z" fill="url(#cyanArea)"/>
+    <path class="trend" stroke="#00eaff" filter="url(#glowCyan)" d="M79 701L93 697L105 682L118 662L131 645L144 650L155 640L168 652L180 663L194 668L207 657L220 665L232 657L245 663L257 647L271 631L283 635L294 624L307 633L319 626L333 635L346 614L359 620L371 602L380 591"/>
+    <circle cx="380" cy="591" r="7" fill="#00eaff"/>
+  </g>
+  <!-- Card 2: Contributions -->
+  <g id="contributions-card" class="card-visual">
+    <path class="card" d="M503 390L686 334L868 390V738L857 748H514L503 738Z"/>
+    <path d="M503 390L686 443L868 390" fill="none" stroke="#00dff7" stroke-width="1.7" opacity=".8"/>
+    <path d="M514 406L686 354L857 406V738H514Z" fill="url(#smallGrid)" opacity=".75"/>
+    <g fill="#031b2a" stroke="#00eaff" stroke-width="6" filter="url(#glowCyan)">
+      <ellipse cx="686" cy="260" rx="56" ry="27"/><path d="M630 260V350C630 365 655 379 686 379S742 365 742 350V260" fill="#031b2a"/><path d="M630 289C630 304 655 317 686 317S742 304 742 289M630 319C630 334 655 347 686 347S742 334 742 319M630 350C630 365 655 379 686 379S742 365 742 350" fill="none"/>
+    </g>
+    <text x="686" y="489" class="value cyan"><tspan>0<animate attributeName="textContent" values="0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35;36;37;38;39;40;41;42;43;44;45;46;47;48;49;50;51;52;53;54;55;56;57;58;59;60;61;62;63;64;65;66;67;68;69;70;71;72;73;74;75;76;77;78;79;80;81;82;83;84;85;86;87;88;89;90;91;92;93;94;95;96;97;98;99;100;150;200;250;300;350;400;450;500;550;600;650;700;750;800;850;900;950;1,000;1,053" dur="1.8s" begin="0s" fill="freeze" calcMode="discrete"/></tspan></text>
+    <text x="686" y="557" class="label" font-size="32">Contributions</text>
+    <path d="M516 720L529 716L543 698L555 679L567 671L580 686L594 695L608 685L620 674L633 680L646 660L659 651L671 658L685 647L697 651L710 637L724 640L738 628L751 637L764 644L777 636L791 647L805 630L818 614L831 609L844 594L856 621V738H516Z" fill="url(#cyanArea)"/>
+    <path class="trend" stroke="#00eaff" filter="url(#glowCyan)" d="M516 720L529 716L543 698L555 679L567 671L580 686L594 695L608 685L620 674L633 680L646 660L659 651L671 658L685 647L697 651L710 637L724 640L738 628L751 637L764 644L777 636L791 647L805 630L818 614L831 609L844 594"/>
+    <circle cx="844" cy="594" r="7" fill="#00eaff"/>
+  </g>
+  <!-- Card 3: Pull requests -->
+  <g id="pull-requests-card" class="card-visual">
+    <path d="M946 390L1122 334L1298 390V738L1287 748H957L946 738Z" fill="url(#cardFill)" stroke="#7f77b8" stroke-width="1.8"/>
+    <path d="M946 390L1122 443L1298 390" fill="none" stroke="#d14fd4" stroke-width="1.7" opacity=".75"/>
+    <path d="M957 406L1122 354L1287 406V738H957Z" fill="url(#smallGrid)" opacity=".75"/>
+    <g fill="none" stroke="#ff2029" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowRed)"><path d="M1098 355V263L1156 286M1098 309L1098 355"/><circle cx="1098" cy="253" r="18"/><circle cx="1157" cy="285" r="18"/><circle cx="1098" cy="359" r="18"/></g>
+    <text x="1122" y="489" class="value red"><tspan>0<animate attributeName="textContent" values="0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30;31;32;33;34;35;36;37;38;39;40;41;42;43;44;45;46;47;48;49;50;60;70;80;90;100;110;120;130;140;147" dur="1.6s" begin="0s" fill="freeze" calcMode="discrete"/></tspan></text>
+    <text x="1122" y="557" class="label" font-size="31">Pull Requests</text>
+    <path d="M959 720L974 712L987 699L1000 688L1013 680L1026 664L1038 671L1051 663L1064 675L1077 692L1090 684L1103 674L1116 679L1129 663L1142 654L1155 637L1168 645L1181 657L1194 651L1207 663L1220 654L1233 641L1246 648L1259 621L1272 612L1285 606V738H959Z" fill="url(#redArea)"/>
+    <path class="trend" stroke="#ff2029" filter="url(#glowRed)" d="M959 720L974 712L987 699L1000 688L1013 680L1026 664L1038 671L1051 663L1064 675L1077 692L1090 684L1103 674L1116 679L1129 663L1142 654L1155 637L1168 645L1181 657L1194 651L1207 663L1220 654L1233 641L1246 648L1259 621L1272 612"/>
+    <circle cx="1272" cy="612" r="7" fill="#ff2029"/>
+  </g>
+  <!-- Card 4: Current streak -->
+  <g id="streak-card" class="card-visual">
+    <path d="M1385 390L1569 334L1753 390V738L1742 748H1396L1385 738Z" fill="url(#cardFill)" stroke="#00dff7" stroke-width="1.8"/>
+    <path d="M1385 390L1569 443L1753 390" fill="none" stroke="#ffdf00" stroke-width="1.7" opacity=".8"/>
+    <path d="M1396 406L1569 354L1742 406V738H1396Z" fill="url(#smallGrid)" opacity=".75"/>
+    <path d="M1550 222C1556 247 1541 265 1522 278C1504 291 1497 313 1508 334C1516 350 1530 361 1546 367L1551 333L1567 354L1573 373C1595 359 1611 339 1615 314C1618 294 1608 277 1600 266C1596 286 1586 293 1578 296C1589 269 1574 238 1550 222Z" fill="#071c26" stroke="#ffdf00" stroke-width="6" stroke-linejoin="round" filter="url(#glowYellow)"/>
+    <text x="1569" y="489" class="value yellow"><tspan>0d<animate attributeName="textContent" values="0d;1d;2d;3d;4d;5d;6d;7d;8d" dur="1.2s" begin="0s" fill="freeze" calcMode="discrete"/></tspan></text>
+    <text x="1569" y="557" class="label" font-size="30">Current Streak</text>
+    <path d="M1398 718L1412 714L1425 699L1438 677L1450 663L1463 654L1476 663L1489 650L1502 661L1515 681L1528 689L1541 679L1554 681L1567 665L1580 652L1593 637L1606 644L1619 659L1632 669L1645 660L1658 650L1671 657L1684 648L1697 659L1710 644L1723 631L1736 618V738H1398Z" fill="url(#yellowArea)"/>
+    <path class="trend" stroke="#ffdf00" filter="url(#glowYellow)" d="M1398 718L1412 714L1425 699L1438 677L1450 663L1463 654L1476 663L1489 650L1502 661L1515 681L1528 689L1541 679L1554 681L1567 665L1580 652L1593 637L1606 644L1619 659L1632 669L1645 660L1658 650L1671 657L1684 648L1697 659L1710 644L1723 631L1736 618"/>
+    <circle cx="1736" cy="618" r="7" fill="#ffdf00"/>
+  </g>
+</svg>

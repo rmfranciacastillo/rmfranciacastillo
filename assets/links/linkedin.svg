@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="410 160 390 524" width="390" height="524" role="img" aria-labelledby="title desc">
+<title id="title">LinkedIn link card</title><desc id="desc">A precisely cropped slice of the original Nachocode LINKS panel.</desc>
+
+
+
+
+  <title id="title">Nachocode links</title>
+
+  <desc id="desc">Five clickable racing tire cards for GitHub, LinkedIn, YouTube, Medium, and Website.</desc>
+
+
+
+  <style>
+
+    .bg{fill:#03131F}
+
+    .grid{stroke:#0B3044;stroke-width:1;opacity:.55}
+
+    .frame{fill:none;stroke:#04BCEB;stroke-width:3}
+
+    .frame2{fill:none;stroke:#0A5D78;stroke-width:1.5;opacity:.7}
+
+    .mono{font-family:"DejaVu Sans Mono","Liberation Mono",monospace}
+
+    .number{fill:#FF3030;font-size:32px;font-weight:700}
+
+    .heading{fill:#F0F4F8;font-size:34px;font-weight:500}
+
+    .prompt{fill:#19D98B;font-size:27px}
+
+    .command{fill:#0AD9F5;font-size:27px}
+
+    .label{fill:#F0F4F8;font-size:27px;text-anchor:middle}
+
+    .divider{stroke:#5A8DA6;stroke-width:2;opacity:.8}
+
+    .tire{fill:#070B10;stroke:#66727E;stroke-width:4}
+
+    .side{fill:#0A1017;stroke:#253442;stroke-width:3}
+
+    .rim{fill:#101923;stroke:#344655;stroke-width:3}
+
+    .spoke{stroke:#253441;stroke-width:7;stroke-linecap:round}
+
+    .hub{fill:#0A1017;stroke:#657687;stroke-width:3}
+
+    .brand{font-size:16px;font-weight:700;text-anchor:middle}
+
+    .brandline{stroke-width:3}
+
+    .ring{fill:none;stroke-width:12;stroke-linecap:round;stroke-dasharray:115 35}
+
+    .ring-outline{fill:none;stroke:#10202D;stroke-width:3}
+
+    .card:hover .tire{filter:url(#hoverGlow)}
+
+    .card:focus .tire{filter:url(#focusGlow)}
+
+    .github-tire { transform-box: fill-box; transform-origin: center center; transition: transform 0.25s cubic-bezier(.2,.8,.2,1); }
+
+    .card:hover .github-tire { transform: translateX(5px) translateY(-3px) rotateY(12deg) scale(1.12); }
+
+    .tire-depth { fill: #05080d; stroke: #3d4654; stroke-width: 5; }
+
+    .tire-depth { transform: translateX(-8px); transition: transform .25s ease; }
+
+    .card:hover .tire-depth { transform: translateX(-16px); }
+
+    .github-shadow { transform-origin: center; transition: transform 0.25s ease, opacity 0.25s ease; }
+
+    .card:hover .github-shadow { transform: scaleX(0.8) translateX(8px); opacity: 0.12; }
+
+  </style>
+
+
+
+  <defs>
+
+    <filter id="hoverGlow" x="-30%" y="-30%" width="160%" height="160%">
+
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    </filter>
+
+    <filter id="focusGlow" x="-30%" y="-30%" width="160%" height="160%">
+
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+
+    </filter>
+
+  </defs>
+
+
+
+  <rect class="bg" width="2048" height="684"/>
+
+
+
+  <g class="grid">
+
+    <path d="M0 104H2048M0 180H2048M0 255H2048M0 330H2048M0 405H2048M0 480H2048M0 555H2048M0 630H2048"/>
+
+    <path d="M142 0V684M282 0V684M422 0V684M562 0V684M702 0V684M842 0V684M982 0V684M1122 0V684M1262 0V684M1402 0V684M1542 0V684M1682 0V684M1822 0V684"/>
+
+  </g>
+
+
+
+  <path class="frame" d="M12 28L42 2H2006L2036 28V656L2006 682H42L12 656Z"/>
+
+  <path class="frame2" d="M25 36L50 14H1998L2023 36M25 648L50 670H1998L2023 648"/>
+
+
+
+  <g class="mono">
+
+    <text class="number" x="80" y="86">02.</text>
+
+    <text class="heading" x="200" y="86">LINKS</text>
+
+    <text class="prompt" x="80" y="153">$</text>
+
+    <text class="command" x="126" y="153">ping --all</text>
+
+  </g>
+
+
+
+  \<!-- GITHUB -->
+
+  <a class="card" href="https\://github.com/rmfranciacastillo" aria-label="GitHub — Renato Francia">
+
+    <g transform="translate(55 175)">
+
+      <ellipse cx="160" cy="273" rx="92" ry="7" fill="#FFFFFF" opacity=".18"/>
+
+
+
+      <g class="github-tire">
+
+        <circle class="tire" cx="160" cy="150" r="112"/>
+
+        <circle class="side" cx="160" cy="150" r="94"/>
+
+        <circle class="ring" cx="160" cy="150" r="76" stroke="#FFFFFF"/>
+
+        <circle class="ring-outline" cx="160" cy="150" r="76"/>
+
+        <circle class="rim" cx="160" cy="150" r="55"/>
+
+
+
+        <g class="spoke">
+
+          <path d="M160 100V200"/>
+
+          <path d="M110 150H210"/>
+
+          <path d="M125 115L195 185"/>
+
+          <path d="M195 115L125 185"/>
+
+          <path d="M140 102L180 198"/>
+
+          <path d="M180 102L140 198"/>
+
+        </g>
+
+        <circle class="hub" cx="160" cy="150" r="17"/>
+
+        <path id="github-curve" class="brandline" stroke="#FFFFFF" fill="none" d="M112 77 A76 76 0 0 1 208 77"/>
+
+        <path id="github-curve-text" stroke="none" fill="none" d="M112 73 A76 76 0 0 1 208 73"/>
+
+
+
+        <text class="brand mono" fill="#FFFFFF">
+
+          <textPath href="#github-curve-text" startOffset="50%" text-anchor="middle">
+
+            NACHOCODE
+
+          </textPath>
+
+        </text>
+
+
+
+      </g>
+
+
+
+      \<!-- GitHub logo: clean vector silhouette -->
+
+      \<!-- GitHub logo supplied by user, preserved as SVG path data -->
+
+      <svg x="135" y="275" width="50" height="50"
+
+           viewBox="84 7399 20 20"
+
+           aria-hidden="true">
+
+        <path
+
+          d="M94,7399 C99.523,7399 104,7403.59 104,7409.253
+
+             C104,7413.782 101.138,7417.624 97.167,7418.981
+
+             C96.66,7419.082 96.48,7418.762 96.48,7418.489
+
+             C96.48,7418.151 96.492,7417.047 96.492,7415.675
+
+             C96.492,7414.719 96.172,7414.095 95.813,7413.777
+
+             C98.04,7413.523 100.38,7412.656 100.38,7408.718
+
+             C100.38,7407.598 99.992,7406.684 99.35,7405.966
+
+             C99.454,7405.707 99.797,7404.664 99.252,7403.252
+
+             C99.252,7403.252 98.414,7402.977 96.505,7404.303
+
+             C95.706,7404.076 94.85,7403.962 94,7403.958
+
+             C93.15,7403.962 92.295,7404.076 91.497,7404.303
+
+             C89.586,7402.977 88.746,7403.252 88.746,7403.252
+
+             C88.203,7404.664 88.546,7405.707 88.649,7405.966
+
+             C88.01,7406.684 87.619,7407.598 87.619,7408.718
+
+             C87.619,7412.646 89.954,7413.526 92.175,7413.785
+
+             C91.889,7414.041 91.63,7414.493 91.54,7415.156
+
+             C90.97,7415.418 89.522,7415.871 88.63,7414.304
+
+             C88.63,7414.304 88.101,7413.319 87.097,7413.247
+
+             C87.097,7413.247 86.122,7413.234 87.029,7413.87
+
+             C87.029,7413.87 87.684,7414.185 88.139,7415.37
+
+             C88.139,7415.37 88.726,7417.2 91.508,7416.58
+
+             C91.513,7417.437 91.522,7418.245 91.522,7418.489
+
+             C91.522,7418.76 91.338,7419.077 90.839,7418.982
+
+             C86.865,7417.627 84,7413.783 84,7409.253
+
+             C84,7403.59 88.478,7399 94,7399"
+
+          fill="#F4F4F4"/>
+
+      </svg>
+
+      <text class="label mono" x="160" y="355">Github</text>
+
+    </g>
+
+  </a>
+
+
+
+
+
+  \<!-- LINKEDIN -->
+
+  <a class="card" href="https\://www.linkedin.com/in/renatofrancia/" aria-label="LinkedIn — Renato Francia">
+
+    <g transform="translate(445 175)">
+
+      <ellipse cx="160" cy="273" rx="92" ry="7" fill="#08BCEB" opacity=".18"/>
+
+      <g class="github-tire">
+
+        <circle class="tire" cx="160" cy="150" r="112"/>
+
+        <circle class="side" cx="160" cy="150" r="94"/>
+
+        <circle class="ring" cx="160" cy="150" r="76" stroke="#08BCEB"/>
+
+        <circle class="ring-outline" cx="160" cy="150" r="76"/>
+
+        <circle class="rim" cx="160" cy="150" r="55"/>
+
+
+
+        <g class="spoke">
+
+          <path d="M160 100V200"/>
+
+          <path d="M110 150H210"/>
+
+          <path d="M125 115L195 185"/>
+
+          <path d="M195 115L125 185"/>
+
+          <path d="M140 102L180 198"/>
+
+          <path d="M180 102L140 198"/>
+
+        </g>
+
+        <circle class="hub" cx="160" cy="150" r="17"/>
+
+        <path id="linkedin-curve" class="brandline" stroke="#08BCEB" fill="none" d="M112 77 A76 76 0 0 1 208 77"/>
+
+        <path id="linkedin-curve-text" stroke="none" fill="none" d="M112 73 A76 76 0 0 1 208 73"/>
+
+
+
+        <text class="brand mono" fill="#08BCEB">
+
+          <textPath href="#linkedin-curve-text" startOffset="50%" text-anchor="middle">
+
+            NACHOCODE
+
+          </textPath>
+
+        </text>
+
+      </g>
+
+      <g transform="translate(160 300)">
+
+        <rect x="-25" y="-25" width="50" height="50" rx="4" fill="#0A66C2"/>
+
+        <circle cx="-13" cy="-11" r="4" fill="white"/>
+
+        <path d="M-17-3H-9V18H-17ZM-4-3H4V0C7-5 17-5 20 4V18H12V7C12 3 10 1 7 1C4 1 4 4 4 7V18H-4Z" fill="white"/>
+
+      </g>
+
+      <text class="label mono" x="160" y="355">LinkedIn</text>
+
+    </g>
+
+  </a>
+
+
+
+  \<!-- YOUTUBE -->
+
+  <a class="card" href="https\://www.youtube.com/@codewithnacho" aria-label="YouTube — Code With Nacho">
+
+    <g transform="translate(835 175)">
+
+      <ellipse cx="160" cy="273" rx="92" ry="7" fill="#FF2538" opacity=".18"/>
+
+      <g class="github-tire">
+
+        <circle class="tire" cx="160" cy="150" r="112"/>
+
+        <circle class="side" cx="160" cy="150" r="94"/>
+
+        <circle class="ring" cx="160" cy="150" r="76" stroke="#FF2538"/>
+
+        <circle class="ring-outline" cx="160" cy="150" r="76"/>
+
+        <circle class="rim" cx="160" cy="150" r="55"/>
+
+
+
+        <g class="spoke">
+
+          <path d="M160 100V200"/>
+
+          <path d="M110 150H210"/>
+
+          <path d="M125 115L195 185"/>
+
+          <path d="M195 115L125 185"/>
+
+          <path d="M140 102L180 198"/>
+
+          <path d="M180 102L140 198"/>
+
+        </g>
+
+        <circle class="hub" cx="160" cy="150" r="17"/>
+
+        <path id="youtube-curve" class="brandline" stroke="#FF2538" fill="none" d="M112 77 A76 76 0 0 1 208 77"/>
+
+        <path id="youtube-curve-text" stroke="none" fill="none" d="M112 73 A76 76 0 0 1 208 73"/>
+
+
+
+        <text class="brand mono" fill="#FF2538">
+
+          <textPath href="#youtube-curve-text" startOffset="50%" text-anchor="middle">
+
+            NACHOCODE
+
+          </textPath>
+
+        </text>
+
+      </g>
+
+
+
+      <g transform="translate(160 300)">
+
+        <rect x="-32" y="-22" width="64" height="44" rx="11" fill="#FF0033"/>
+
+        <path d="M-8-13L16 0L-8 13Z" fill="white"/>
+
+      </g>
+
+      <text class="label mono" x="160" y="355">YouTube</text>
+
+    </g>
+
+  </a>
+
+
+
+  \<!-- MEDIUM -->
+
+  <a class="card" href="https\://medium.com/@rmfranciacastillo" aria-label="Medium — Renato Francia">
+
+    <g transform="translate(1225 175)">
+
+
+
+      <ellipse cx="160" cy="273" rx="92" ry="7" fill="#F4F4F4" opacity=".18"/>
+
+      <g class="github-tire">
+
+        <circle class="tire" cx="160" cy="150" r="112"/>
+
+        <circle class="side" cx="160" cy="150" r="94"/>
+
+        <circle class="ring" cx="160" cy="150" r="76" stroke="#F4F4F4"/>
+
+        <circle class="ring-outline" cx="160" cy="150" r="76"/>
+
+        <circle class="rim" cx="160" cy="150" r="55"/>
+
+
+
+        <g class="spoke">
+
+          <path d="M160 100V200"/>
+
+          <path d="M110 150H210"/>
+
+          <path d="M125 115L195 185"/>
+
+          <path d="M195 115L125 185"/>
+
+          <path d="M140 102L180 198"/>
+
+          <path d="M180 102L140 198"/>
+
+        </g>
+
+        <circle class="hub" cx="160" cy="150" r="17"/>
+
+        <path id="medium-curve" class="brandline" stroke="#F4F4F4" fill="none" d="M112 77 A76 76 0 0 1 208 77"/>
+
+        <path id="medium-curve-text" stroke="none" fill="none" d="M112 73 A76 76 0 0 1 208 73"/>
+
+
+
+        <text class="brand mono" fill="#F4F4F4">
+
+          <textPath href="#medium-curve-text" startOffset="50%" text-anchor="middle">
+
+            NACHOCODE
+
+          </textPath>
+
+        </text>
+
+      </g>
+
+
+
+      <g transform="translate(160 300)">
+
+        <rect x="-25" y="-25" width="50" height="50" rx="4" fill="#10151B"/>
+
+        <text x="0" y="14" class="mono" text-anchor="middle" fill="white" font-size="34" font-weight="700">M</text>
+
+      </g>
+
+      <text class="label mono" x="160" y="355">Medium</text>
+
+    </g>
+
+  </a>
+
+
+
+  \<!-- WEBSITE -->
+
+  <a class="card" href="https\://codewithnacho.com/" aria-label="Website — Code With Nacho">
+
+    <g transform="translate(1615 175)">
+
+      <ellipse cx="160" cy="273" rx="92" ry="7" fill="#18E2C0" opacity=".18"/>
+
+      <g class="github-tire">
+
+        <circle class="tire" cx="160" cy="150" r="112"/>
+
+        <circle class="side" cx="160" cy="150" r="94"/>
+
+        <circle class="ring" cx="160" cy="150" r="76" stroke="#18E2C0"/>
+
+        <circle class="ring-outline" cx="160" cy="150" r="76"/>
+
+        <circle class="rim" cx="160" cy="150" r="55"/>
+
+
+
+        <g class="spoke">
+
+          <path d="M160 100V200"/>
+
+          <path d="M110 150H210"/>
+
+          <path d="M125 115L195 185"/>
+
+          <path d="M195 115L125 185"/>
+
+          <path d="M140 102L180 198"/>
+
+          <path d="M180 102L140 198"/>
+
+        </g>
+
+        <circle class="hub" cx="160" cy="150" r="17"/>
+
+        <path id="website-curve" class="brandline" stroke="#18E2C0" fill="none" d="M112 77 A76 76 0 0 1 208 77"/>
+
+        <path id="website-curve-text" stroke="none" fill="none" d="M112 73 A76 76 0 0 1 208 73"/>
+
+
+
+        <text class="brand mono" fill="#18E2C0">
+
+          <textPath href="#website-curve-text" startOffset="50%" text-anchor="middle">
+
+            NACHOCODE
+
+          </textPath>
+
+        </text>
+
+      </g>
+
+
+
+      <g transform="translate(160 300)" fill="none" stroke="#18E2C0">
+
+        <circle r="24" stroke-width="4"/>
+
+        <path d="M-24 0H24M0-24C-9-14-9 14 0 24M0-24C9-14 9 14 0 24M-18-14H18M-18 14H18" stroke-width="2"/>
+
+      </g>
+
+      <text class="label mono" x="160" y="355">Website</text>
+
+    </g>
+
+  </a>
+
+
+
+  <g class="divider">
+
+    <path d="M410 500V568M800 500V568M1190 500V568M1580 500V568"/>
+
+  </g>
+
+
+</svg>
