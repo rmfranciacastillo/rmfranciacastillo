@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1500" height="501" viewBox="0 0 1500 501" role="img" aria-labelledby="svg-title svg-desc" preserveAspectRatio="none">
+  <title id="svg-title">Writing — Blog</title>
+  <desc id="svg-desc">A dark terminal-style panel showing four recent blog posts, dates, a document illustration, and arrow links.</desc>
+  <svg x="0" y="0" width="1500" height="501" viewBox="0 0 1920 640" preserveAspectRatio="none" overflow="hidden"><defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#101c27"/>
+      <stop offset="1" stop-color="#09131c"/>
+    </linearGradient>
+    <linearGradient id="paper-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e77b9b"/>
+      <stop offset="1" stop-color="#00c8ef"/>
+    </linearGradient>
+    <pattern id="dot-grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.15" fill="#284052" opacity=".46"/>
+    </pattern>
+    <style>
+      .mono { font-family: "DejaVu Sans Mono", "Liberation Mono", monospace; }
+      .heading { font-family: "DejaVu Sans Mono", "Liberation Mono", monospace; font-size: 32px; fill: #e1e8f2; }
+      .section-number { fill: #ff343d; font-weight: 700; }
+      .muted { fill: #7f91aa; }
+      .body-text { font-family: "DejaVu Sans Mono", "Liberation Mono", monospace; font-size: 23px; fill: #d9dfeb; }
+      .date { font-family: "DejaVu Sans Mono", "Liberation Mono", monospace; font-size: 21px; fill: #8295b2; }
+      .post-title { font-family: "DejaVu Sans Mono", "Liberation Mono", monospace; font-size: 21px; fill: #dce2ed; }
+      .cyan { fill: #00d3df; }
+      .rule { stroke: #20313f; stroke-width: 1.5; }
+      .row-rule { stroke: #243441; stroke-width: 1.3; opacity: .9; }
+    </style>
+  </defs>
+
+  <g id="background">
+    <rect width="1920" height="640" fill="url(#background)"/>
+    
+    
+    
+    <path d="M0 138 H1920" class="rule"/>
+  </g>
+
+  <g id="header">
+    <text x="56" y="86" class="heading section-number" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:25.6000;font-weight:700;font-style:normal;letter-spacing:0.0000">07.</text>
+    <text x="112" y="86" class="heading" font-weight="700" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:25.6000;font-weight:500;font-style:normal;letter-spacing:0.0000">WRITING</text>
+    <text x="254" y="86" class="heading muted" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:16.6400;font-weight:400;font-style:normal;letter-spacing:0.0000">(Blog)</text>
+    <path d="M54 112 H1870" class="rule"/>
+  </g>
+
+  <g id="terminal-prompt">
+    <text x="56" y="174" class="mono cyan" font-size="26" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:19.2000;font-weight:400;font-style:normal;letter-spacing:0.0000">$</text>
+    <text x="82" y="174" class="mono muted" font-size="26" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:19.2000;font-weight:400;font-style:normal;letter-spacing:0.0000">tail -n 4 ./posts</text>
+  </g>
+
+  <g id="document-icon">
+    <path d="M124 235 L154 217 L252 266 L252 397 L124 333 Z" fill="#121e2b" stroke="url(#paper-edge)" stroke-width="3"/>
+    <path d="M124 235 L154 217 L252 266" fill="none" stroke="#b6c6df" stroke-width="1.5" opacity=".7"/>
+    <path d="M146 273 L225 312 M146 293 L225 332 M146 313 L225 352 M146 333 L214 367" fill="none" stroke="#9aa9c1" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M75 285 V418" fill="none" stroke="#00c9d8" stroke-width="2" stroke-dasharray="5 7" opacity=".85"/>
+  </g>
+
+  <g id="post-list">
+    <g id="post-1">
+      <path d="M300 205 H1818" class="row-rule"/>
+      <text x="306" y="244" class="date" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:16.6400;font-weight:400;font-style:normal;letter-spacing:0.0000">2026-10-01</text>
+      <text x="490" y="244" class="post-title" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:16.6400;font-weight:400;font-style:normal;letter-spacing:0.0000">I Turned My GitHub Profile...</text>
+      <path d="M1828 231 H1845 M1837 222 L1846 231 L1837 240" fill="none" stroke="#00c8e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M300 265 H1818" class="row-rule"/>
+    </g>
+    <g id="post-2">
+      <text x="306" y="300" class="date" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:16.6400;font-weight:400;font-style:normal;letter-spacing:0.0000">2026-09-25</text>
+      <text x="490" y="300" class="post-title" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:16.6400;font-weight:400;font-style:normal;letter-spacing:0.0000">Vim's Swan Song: Is It Time...</text>
+      <path d="M1828 287 H1845 M1837 278 L1846 287 L1837 296" fill="none" stroke="#00c8e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M300 321 H1818" class="row-rule"/>
+    </g>
+    <g id="post-3">
+      <text x="306" y="356" class="date" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:16.6400;font-weight:400;font-style:normal;letter-spacing:0.0000">2026-09-24</text>
+      <text x="490" y="356" class="post-title" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:16.6400;font-weight:400;font-style:normal;letter-spacing:0.0000">Double Engine Failure...</text>
+      <path d="M1828 343 H1845 M1837 334 L1846 343 L1837 352" fill="none" stroke="#00c8e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M300 377 H1818" class="row-rule"/>
+    </g>
+    <g id="post-4">
+      <text x="306" y="412" class="date" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:16.6400;font-weight:400;font-style:normal;letter-spacing:0.0000">2026-09-21</text>
+      <text x="490" y="412" class="post-title" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:16.6400;font-weight:400;font-style:normal;letter-spacing:0.0000">You Don't Miss Engineering...</text>
+      <path d="M1828 399 H1845 M1837 390 L1846 399 L1837 408" fill="none" stroke="#00c8e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M300 433 H1818" class="row-rule"/>
+    </g>
+  </g>
+</svg>
+  <!-- Shared outer frame copied from panel 01 -->
+  <rect x="3" y="3" width="1494" height="495" rx="8" fill="none" stroke="#04BCEB" stroke-width="2"/>
+  <path d="M14 15H1486 M14 486H1486" fill="none" stroke="#0A5D78" stroke-width="1" opacity=".65"/>
+  <path d="M4 20L20 4 M1480 4L1496 20 M4 481L20 497 M1480 497L1496 481" fill="none" stroke="#04BCEB" stroke-width="2"/>
+</svg>

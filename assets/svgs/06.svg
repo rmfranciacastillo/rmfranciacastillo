@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="501" viewBox="0 0 1500 501" role="img" aria-labelledby="title desc" preserveAspectRatio="none">
+<title id="title">Stack — Systems</title>
+<desc id="desc">Editable SVG recreation of a dark technical stack diagram with server racks, connecting lines, and technology categories.</desc>
+<svg x="0" y="0" width="1500" height="501" viewBox="0 0 1769 833" preserveAspectRatio="none" overflow="hidden"><defs>
+  <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0b151e"/><stop offset="1" stop-color="#08121a"/>
+  </linearGradient>
+  <linearGradient id="platform-top" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#202d40"/><stop offset="1" stop-color="#101b29"/>
+  </linearGradient>
+  <linearGradient id="server-front" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#252b4b"/><stop offset="1" stop-color="#101827"/>
+  </linearGradient>
+  <linearGradient id="server-side" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#192239"/><stop offset="1" stop-color="#0d1522"/>
+  </linearGradient>
+  <pattern id="fine-grid" width="18" height="18" patternUnits="userSpaceOnUse">
+    <circle cx="1.5" cy="1.5" r="1" fill="#284154" opacity=".48"/>
+  </pattern>
+  <pattern id="grid-lines" width="80" height="80" patternUnits="userSpaceOnUse">
+    <path d="M80 0H0V80" fill="none" stroke="#1b2c3a" stroke-width="1" opacity=".28"/>
+  </pattern>
+  <style>
+    .mono { font-family: "DejaVu Sans Mono", "Consolas", monospace; }
+    .heading { fill:#e3eaf5; font-size:33.2779px; font-weight:500; }
+    .item { fill:#aebbd0; font-size:21.6307px; font-weight:400; }
+    .category { fill:#dce5f2; font-size:21.6307px; font-weight:500; }
+    .cyan { stroke:#00c9e5; fill:none; stroke-width:3; stroke-linecap:round; stroke-linejoin:round; }
+    .wire { fill:none; stroke:#00bcd7; stroke-width:2.6; stroke-linecap:round; stroke-linejoin:round; }
+    .edge { stroke:#7787b5; stroke-width:2; stroke-linejoin:round; }
+  </style>
+</defs>
+
+<!-- COMPONENT: background -->
+<g id="background">
+  <rect width="1769" height="833" fill="url(#background)"/>
+  
+  
+  
+  
+  <path d="M30 128H1710" stroke="#203342" stroke-width="1.5"/>
+</g>
+
+<!-- COMPONENT: heading -->
+<g id="heading" class="mono">
+  <text x="88" y="91" fill="#ff252b" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:33.2535px;font-weight:700;font-style:normal;letter-spacing:0" transform="translate(88 0) scale(0.709299 1) translate(-88 0)">06.</text>
+  <text x="150" y="91" class="heading" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:33.2535px;font-weight:500;font-style:normal;letter-spacing:0" transform="translate(150 0) scale(0.709299 1) translate(-150 0)">STACK</text>
+  <text x="270" y="91" fill="#c0cce0" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:24.9401px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(270 0) scale(0.709299 1) translate(-270 0)">(Systems)</text>
+  <text x="91" y="180" fill="#00d7a8" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:24.9401px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(91 0) scale(0.709299 1) translate(-91 0)">$</text>
+  <text x="135" y="180" fill="#8b9bb5" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:24.9401px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(135 0) scale(0.709299 1) translate(-135 0)">scan --loadout</text>
+</g>
+
+<!-- COMPONENT: central infrastructure platform -->
+<g id="infrastructure-platform">
+  <path d="M554 490L802 348L1101 489L855 637Z" fill="url(#platform-top)" stroke="#7785ad" stroke-width="2.4"/>
+  <path d="M554 490L855 637V717L554 570Z" fill="#101b29" stroke="#26364a" stroke-width="1.5"/>
+  <path d="M855 637L1101 489V569L855 717Z" fill="#0d1723" stroke="#26364a" stroke-width="1.5"/>
+  <path d="M574 493L802 364L1076 492L855 620Z" fill="none" stroke="#35455f" stroke-width="1.5"/>
+  <path d="M554 490L855 637L1101 489" fill="none" stroke="#91a0ca" stroke-width="2.3"/>
+</g>
+
+<!-- COMPONENT: tall server -->
+<g id="server-tall">
+  <path d="M665 310L780 240L868 289L753 359Z" fill="#333957" stroke="#7e8bb8" stroke-width="2"/>
+  <path d="M665 310L753 359V509L665 461Z" fill="url(#server-front)" stroke="#8290bb" stroke-width="2"/>
+  <path d="M753 359L868 289V439L753 509Z" fill="url(#server-side)" stroke="#5d6a94" stroke-width="2"/>
+  <path d="M665 310L780 240L868 289L753 359Z" fill="#454b70" opacity=".68"/>
+  <path d="M681 342L744 375L744 407L681 374Z" fill="#111a29" stroke="#465577" stroke-width="1.5"/>
+  <path d="M681 383L744 416L744 448L681 415Z" fill="#111a29" stroke="#465577" stroke-width="1.5"/>
+  <path d="M681 425L744 458L744 487L681 454Z" fill="#111a29" stroke="#465577" stroke-width="1.5"/>
+  <path d="M760 372L854 315 M760 413L854 356 M760 454L854 397" stroke="#3b4765" stroke-width="2"/>
+  <g stroke-linecap="round" stroke-width="4">
+    <path d="M681 348L697 356 M704 360L719 368 M726 372L738 378" stroke="#00e2aa"/>
+    <path d="M681 390L697 398 M704 402L719 410 M726 414L738 420" stroke="#8ee95c"/>
+    <path d="M681 432L697 440 M704 444L719 452" stroke="#00d4e6"/>
+    <path d="M770 374L790 362 M811 350L829 340" stroke="#ff794f"/>
+    <path d="M770 415L791 403 M811 391L830 381" stroke="#ec7ab5"/>
+    <path d="M770 456L790 444 M811 432L830 422" stroke="#f1d84c"/>
+  </g>
+  <path d="M753 359V509" stroke="#a2afd6" stroke-width="2"/>
+</g>
+
+<!-- COMPONENT: compact server -->
+<g id="server-compact">
+  <path d="M850 390L931 349L991 383L910 428Z" fill="#343b5a" stroke="#7182ae" stroke-width="2"/>
+  <path d="M850 390L910 428V558L850 526Z" fill="url(#server-front)" stroke="#7787b4" stroke-width="2"/>
+  <path d="M910 428L991 383V513L910 558Z" fill="url(#server-side)" stroke="#596a96" stroke-width="2"/>
+  <path d="M861 410L900 432V458L861 436Z M861 448L900 470V496L861 474Z M861 486L900 508V532L861 510Z" fill="#111b29" stroke="#435273" stroke-width="1.4"/>
+  <g stroke-linecap="round" stroke-width="3.5">
+    <path d="M866 417L878 424 M884 427L895 433" stroke="#00d9b3"/>
+    <path d="M866 455L878 462 M884 465L895 471" stroke="#f4d747"/>
+    <path d="M866 493L878 500 M884 503L895 509" stroke="#00cce6"/>
+    <path d="M920 435L945 422 M955 416L977 404" stroke="#00cfe7"/>
+    <path d="M920 473L941 461 M954 454L976 442" stroke="#e8d34b"/>
+    <path d="M920 511L942 499 M955 492L976 480" stroke="#00d5ad"/>
+  </g>
+  <path d="M910 428V558" stroke="#9aa8d0" stroke-width="2"/>
+  <path d="M911 558L991 513" stroke="#fa554b" stroke-width="3"/>
+</g>
+
+<!-- COMPONENT: tiny data beacon -->
+<g id="data-beacon">
+  <path d="M827 517V572" stroke="#00b9df" stroke-width="4"/>
+  <path d="M817 540L827 550L837 538 M817 552L827 562L837 550" fill="none" stroke="#00d6d7" stroke-width="3"/>
+  <ellipse cx="827" cy="576" rx="14" ry="7" fill="#152434" stroke="#4b6687" stroke-width="2"/>
+  <path d="M816 572L827 578L838 572L835 585L827 590L818 585Z" fill="#d9dd38" stroke="#697e5b" stroke-width="1.5"/>
+  <path d="M818 513C818 503 836 503 836 513V525L827 531L818 525Z" fill="#00cda7"/>
+  <ellipse cx="827" cy="513" rx="9" ry="5" fill="#3bf2c3"/>
+</g>
+
+<!-- COMPONENT: connector lines -->
+<g id="connectors">
+  <path class="wire" d="M435 285H561L591 315V459L601 469"/>
+  <path class="wire" d="M356 678H605L679 600"/>
+  <path d="M430 285H561L591 315V459" fill="none" stroke="#008ba6" stroke-width="1" opacity=".6"/>
+  <path d="M920 290L982 225H1053" fill="none" stroke="#a77bd0" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="920" cy="290" r="6" fill="#c5a1ef"/>
+  <path class="wire" d="M1034 491L1071 450H1401L1434 416V384"/>
+  <circle cx="1071" cy="450" r="7" fill="#8fb4ee"/>
+  <path d="M980 609H1252" fill="none" stroke="#93a5ec" stroke-width="3"/>
+  <circle cx="980" cy="609" r="11" fill="#93a5ec"/>
+  <circle cx="1183" cy="609" r="8" fill="#8caeea"/>
+  <path d="M601 469L612 472L605 460Z" fill="#00cce6"/>
+  <path d="M679 600L677 612L688 604Z" fill="#00cce6"/>
+</g>
+
+<!-- COMPONENT: languages -->
+<g id="languages" class="mono">
+  <g id="languages-icon" fill="none" stroke="#00bfd4" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M184 271L162 294L184 317"/>
+    <path d="M220 271L242 294L220 317"/>
+    <path d="M211 271L193 317" stroke-width="4"/>
+  </g>
+  <text x="254" y="281" class="category" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:500;font-style:normal;letter-spacing:0" transform="translate(254 0) scale(0.709299 1) translate(-254 0)">Languages</text>
+  <g fill="#00d5e9">
+    <circle cx="251" cy="333" r="3.4"/><circle cx="251" cy="380" r="3.4"/>
+    <circle cx="251" cy="426" r="3.4"/><circle cx="251" cy="472" r="3.4"/>
+  </g>
+  <text x="271" y="341" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(271 0) scale(0.709299 1) translate(-271 0)">PHP</text>
+  <text x="271" y="388" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(271 0) scale(0.709299 1) translate(-271 0)">Python</text>
+  <text x="271" y="434" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(271 0) scale(0.709299 1) translate(-271 0)">JavaScript</text>
+  <text x="271" y="480" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(271 0) scale(0.709299 1) translate(-271 0)">TypeScript</text>
+</g>
+
+<!-- COMPONENT: cloud and DevOps -->
+<g id="cloud-devops" class="mono">
+  <path class="cyan" d="M101 609C88 609 87 590 99 584C101 565 125 561 136 575C151 571 166 583 166 598C166 605 160 611 152 611H101Z"/>
+  <text x="211" y="594" class="category" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:500;font-style:normal;letter-spacing:0" transform="translate(211 0) scale(0.709299 1) translate(-211 0)">Cloud / DevOps</text>
+  <text x="213" y="646" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(213 0) scale(0.709299 1) translate(-213 0)">AWS</text>
+  <text x="213" y="684" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(213 0) scale(0.709299 1) translate(-213 0)">Azure</text>
+  <text x="213" y="722" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(213 0) scale(0.709299 1) translate(-213 0)">Docker</text>
+  <text x="213" y="760" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(213 0) scale(0.709299 1) translate(-213 0)">GitHub Actions</text>
+</g>
+
+<!-- COMPONENT: frameworks -->
+<g id="frameworks" class="mono">
+  <path d="M1074 208L1096 196L1117 207L1117 232L1095 244L1074 232Z" fill="#111c30" stroke="#00cce8" stroke-width="3"/>
+  <path d="M1074 208L1095 220L1117 207 M1095 220V244" fill="none" stroke="#3679ff" stroke-width="2.5"/>
+  <path d="M1095 220L1110 212V230L1095 238Z" fill="#3621a4" opacity=".9"/>
+  <text x="1171" y="198" class="category" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:500;font-style:normal;letter-spacing:0" transform="translate(1171 0) scale(0.709299 1) translate(-1171 0)">Frameworks</text>
+  <g fill="#00d5e9"><circle cx="1155" cy="249" r="3"/><circle cx="1155" cy="283" r="3"/><circle cx="1155" cy="317" r="3"/><circle cx="1155" cy="351" r="3"/></g>
+  <text x="1173" y="258" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1173 0) scale(0.709299 1) translate(-1173 0)">Drupal</text>
+  <text x="1173" y="292" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1173 0) scale(0.709299 1) translate(-1173 0)">Laravel</text>
+  <text x="1173" y="326" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1173 0) scale(0.709299 1) translate(-1173 0)">WordPress</text>
+  <text x="1173" y="360" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1173 0) scale(0.709299 1) translate(-1173 0)">FastAPI</text>
+</g>
+
+<!-- COMPONENT: databases -->
+<g id="databases" class="mono">
+  <ellipse cx="1444" cy="291" rx="26" ry="10" fill="none" stroke="#00cce8" stroke-width="4"/>
+  <path d="M1418 291V348C1418 361 1470 361 1470 348V291 M1418 310C1418 323 1470 323 1470 310 M1418 329C1418 342 1470 342 1470 329" fill="none" stroke="#00cce8" stroke-width="4"/>
+  <text x="1506" y="309" class="category" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:500;font-style:normal;letter-spacing:0" transform="translate(1506 0) scale(0.709299 1) translate(-1506 0)">Databases</text>
+  <text x="1508" y="351" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1508 0) scale(0.709299 1) translate(-1508 0)">PostgreSQL</text>
+  <text x="1508" y="386" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1508 0) scale(0.709299 1) translate(-1508 0)">MySQL</text>
+  <text x="1508" y="421" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1508 0) scale(0.709299 1) translate(-1508 0)">Redis</text>
+  <text x="1508" y="456" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1508 0) scale(0.709299 1) translate(-1508 0)">MongoDB</text>
+</g>
+
+<!-- COMPONENT: tools -->
+<g id="tools" class="mono">
+  <g id="tools-icon" transform="translate(1280 586)" fill="none" stroke="#00bfd4" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Open-ended wrench -->
+    <path d="M-24 -22A12 12 0 0 0 -9 -7L10 12A5 5 0 0 0 17 5L-2 -14A12 12 0 0 0 -17 -29L-10 -22L-14 -15Z"/>
+  </g>
+  <text x="1375" y="594" class="category" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:500;font-style:normal;letter-spacing:0" transform="translate(1375 0) scale(0.709299 1) translate(-1375 0)">Tools</text>
+  <text x="1377" y="647" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1377 0) scale(0.709299 1) translate(-1377 0)">Linux</text>
+  <text x="1377" y="683" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1377 0) scale(0.709299 1) translate(-1377 0)">Nginx</text>
+  <text x="1377" y="719" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1377 0) scale(0.709299 1) translate(-1377 0)">Git</text>
+  <text x="1377" y="755" class="item" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:21.6148px;font-weight:400;font-style:normal;letter-spacing:0" transform="translate(1377 0) scale(0.709299 1) translate(-1377 0)">VS Code</text>
+</g>
+</svg>
+  <!-- Shared outer frame copied from panel 01 -->
+  <rect x="3" y="3" width="1494" height="495" rx="8" fill="none" stroke="#04BCEB" stroke-width="2"/>
+  <path d="M14 15H1486 M14 486H1486" fill="none" stroke="#0A5D78" stroke-width="1" opacity=".65"/>
+  <path d="M4 20L20 4 M1480 4L1496 20 M4 481L20 497 M1480 497L1496 481" fill="none" stroke="#04BCEB" stroke-width="2"/>
+</svg>
