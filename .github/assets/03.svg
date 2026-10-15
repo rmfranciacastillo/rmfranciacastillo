@@ -102,7 +102,7 @@
         <path d="M630 260V350C630 365 655 379 686 379S742 365 742 350V260" fill="#031b2a" />
         <path d="M630 289C630 304 655 317 686 317S742 304 742 289M630 319C630 334 655 347 686 347S742 334 742 319M630 350C630 365 655 379 686 379S742 365 742 350" fill="none" />
       </g>
-      <text x="686" y="489" class="value cyan" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:54;font-weight:700;font-style:normal;letter-spacing:0.0000">2,336</text>
+      <text x="686" y="489" class="value cyan" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:54;font-weight:700;font-style:normal;letter-spacing:0.0000">2,339</text>
       <text x="686" y="557" class="label" font-size="32" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:32px;font-weight:400;font-style:normal;letter-spacing:0.0000">Contributions</text>
       <path d="M516 720L529 716L543 698L555 679L567 671L580 686L594 695L608 685L620 674L633 680L646 660L659 651L671 658L685 647L697 651L710 637L724 640L738 628L751 637L764 644L777 636L791 647L805 630L818 614L831 609L844 594L856 621V738H516Z" fill="url(#cyanArea)" />
       <path class="trend" stroke="#00eaff" filter="url(#glowCyan)" d="M516 720L529 716L543 698L555 679L567 671L580 686L594 695L608 685L620 674L633 680L646 660L659 651L671 658L685 647L697 651L710 637L724 640L738 628L751 637L764 644L777 636L791 647L805 630L818 614L831 609L844 594" />
