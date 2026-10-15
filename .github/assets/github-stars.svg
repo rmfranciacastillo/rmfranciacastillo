@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="119"
+    height="24"
+    viewBox="0 0 119 24"
+    role="img"
+    aria-label="GitHub stars: 4">
+  <title>GitHub stars: 4</title>
+  <rect width="91" height="24" rx="4"
+        fill="#1e293b"/>
+  <rect x="91" width="28" height="24"
+        rx="4" fill="#0891b2"/>
+  <rect x="87" width="8" height="24"
+        fill="#0891b2"/>
+  <g fill="#f8fafc"
+     font-family="Verdana, DejaVu Sans, sans-serif"
+     font-size="12"
+     text-anchor="middle">
+    <text x="45.5"
+          y="16"
+          dominant-baseline="middle">GitHub stars</text>
+    <text x="105.0"
+          y="16"
+          dominant-baseline="middle"
+          font-weight="bold">4</text>
+  </g>
+</svg>

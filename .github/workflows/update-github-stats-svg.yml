@@ -1,0 +1,32 @@
+name: Update GitHub Stats SVG
+
+on:
+  schedule:
+    - cron: "23 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate stats SVG
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_USER: rmfranciacastillo
+          STATS_SVG_PATH: .github/assets/03.svg
+        run: python3 .github/scripts/update_github_stats_svg.py
+
+      - name: Commit updated SVG
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "chore(stats): update GitHub stats SVG"
+          add: ".github/assets/03.svg"
+          author_name: "GitHub Actions"
+          author_email: "41898282+github-actions[bot]@users.noreply.github.com"

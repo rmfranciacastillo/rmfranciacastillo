@@ -1,0 +1,60 @@
+
+name: GitHub Readme Badges
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify YouTube configuration
+        env:
+          YOUTUBE_CHANNEL_ID: ${{ vars.YOUTUBE_CHANNEL_ID }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          if [ -z "$YOUTUBE_CHANNEL_ID" ]; then
+            echo "ERROR: YOUTUBE_CHANNEL_ID is empty"
+            exit 1
+          fi
+
+          if [ -z "$YOUTUBE_API_KEY" ]; then
+            echo "ERROR: YOUTUBE_API_KEY is empty"
+            exit 1
+          fi
+
+          echo "YouTube channel ID is configured"
+          echo "YouTube API key is configured"
+
+      - uses: DenverCoder1/github-readme-youtube-cards@main
+        with:
+          channel_id: ${{ vars.YOUTUBE_CHANNEL_ID }}
+          youtube_api_key: ${{ secrets.YOUTUBE_API_KEY }}
+          background_color: "#03121E"
+          title_color: "#00F5D4"
+          stats_color: "#B8C7D9"
+          show_duration: true
+
+      - name: Update profile badges
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          YOUTUBE_CHANNEL_ID: ${{ vars.YOUTUBE_CHANNEL_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/profile_badges.py
+
+      - name: Commit badge updates
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "docs(readme): Update profile badges"
+          add: ".github/assets"
+          author_name: "GitHub Actions"
+          author_email: "41898282+github-actions[bot]@users.noreply.github.com"

@@ -1,0 +1,42 @@
+name: Update Commit Circuit SVG
+
+on:
+  schedule:
+    - cron: "31 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-circuit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Update Commit Circuit stats (last 365 days)
+        env:
+          # Add a repository secret named CONTRIBUTIONS_TOKEN containing a
+          # GitHub token with read:user scope. GITHUB_TOKEN is public-only fallback.
+          CONTRIBUTIONS_TOKEN: ${{ secrets.CONTRIBUTIONS_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_USER: rmfranciacastillo
+          STATS_SVG_PATH: .github/assets/04.svg
+        run: python .github/scripts/update_commit_circuit.py
+
+      - name: Validate updated SVG
+        run: python -c "import xml.etree.ElementTree as ET; ET.parse('.github/assets/04.svg'); print('SVG XML is valid')"
+
+      - name: Commit updated SVG
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "chore(stats): update Commit Circuit metrics"
+          add: ".github/assets/04.svg"
+          author_name: "github-actions[bot]"
+          author_email: "41898282+github-actions[bot]@users.noreply.github.com"
