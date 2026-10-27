@@ -102,7 +102,7 @@
         <path d="M630 260V350C630 365 655 379 686 379S742 365 742 350V260" fill="#031b2a" />
         <path d="M630 289C630 304 655 317 686 317S742 304 742 289M630 319C630 334 655 347 686 347S742 334 742 319M630 350C630 365 655 379 686 379S742 365 742 350" fill="none" />
       </g>
-      <text x="686" y="489" class="value cyan" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:54;font-weight:700;font-style:normal;letter-spacing:0.0000">2,328</text>
+      <text x="686" y="489" class="value cyan" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:54;font-weight:700;font-style:normal;letter-spacing:0.0000">2,313</text>
       <text x="686" y="557" class="label" font-size="32" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:32px;font-weight:400;font-style:normal;letter-spacing:0.0000">Contributions</text>
       <path d="M516 720L529 716L543 698L555 679L567 671L580 686L594 695L608 685L620 674L633 680L646 660L659 651L671 658L685 647L697 651L710 637L724 640L738 628L751 637L764 644L777 636L791 647L805 630L818 614L831 609L844 594L856 621V738H516Z" fill="url(#cyanArea)" />
       <path class="trend" stroke="#00eaff" filter="url(#glowCyan)" d="M516 720L529 716L543 698L555 679L567 671L580 686L594 695L608 685L620 674L633 680L646 660L659 651L671 658L685 647L697 651L710 637L724 640L738 628L751 637L764 644L777 636L791 647L805 630L818 614L831 609L844 594" />
@@ -131,7 +131,7 @@
       <path d="M1385 390L1569 443L1753 390" fill="none" stroke="#ffdf00" stroke-width="1.7" opacity=".8" />
       <path d="M1396 406L1569 354L1742 406V738H1396Z" fill="url(#smallGrid)" opacity=".75" />
       <path d="M1550 222C1556 247 1541 265 1522 278C1504 291 1497 313 1508 334C1516 350 1530 361 1546 367L1551 333L1567 354L1573 373C1595 359 1611 339 1615 314C1618 294 1608 277 1600 266C1596 286 1586 293 1578 296C1589 269 1574 238 1550 222Z" fill="#071c26" stroke="#ffdf00" stroke-width="6" stroke-linejoin="round" filter="url(#glowYellow)" />
-      <text x="1569" y="489" class="value yellow" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:54px;font-weight:700;font-style:normal;letter-spacing:0.0000">0d</text>
+      <text x="1569" y="489" class="value yellow" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:54px;font-weight:700;font-style:normal;letter-spacing:0.0000">1d</text>
       <text x="1569" y="557" class="label" font-size="30" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:32;font-weight:400;font-style:normal;letter-spacing:0.0000">Current Streak</text>
       <path d="M1398 718L1412 714L1425 699L1438 677L1450 663L1463 654L1476 663L1489 650L1502 661L1515 681L1528 689L1541 679L1554 681L1567 665L1580 652L1593 637L1606 644L1619 659L1632 669L1645 660L1658 650L1671 657L1684 648L1697 659L1710 644L1723 631L1736 618V738H1398Z" fill="url(#yellowArea)" />
       <path class="trend" stroke="#ffdf00" filter="url(#glowYellow)" d="M1398 718L1412 714L1425 699L1438 677L1450 663L1463 654L1476 663L1489 650L1502 661L1515 681L1528 689L1541 679L1554 681L1567 665L1580 652L1593 637L1606 644L1619 659L1632 669L1645 660L1658 650L1671 657L1684 648L1697 659L1710 644L1723 631L1736 618" />
