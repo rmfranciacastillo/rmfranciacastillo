@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-    width="185"
+    width="184"
     height="24"
-    viewBox="0 0 185 24"
+    viewBox="0 0 184 24"
     role="img"
-    aria-label="YouTube subscribers: 190">
-  <title>YouTube subscribers: 190</title>
+    aria-label="YouTube subscribers: 191">
+  <title>YouTube subscribers: 191</title>
   <rect width="142" height="24" rx="4"
         fill="#1e293b"/>
-  <rect x="142" width="43" height="24"
+  <rect x="142" width="42" height="24"
         rx="4" fill="#0891b2"/>
   <rect x="138" width="8" height="24"
         fill="#0891b2"/>
@@ -18,9 +18,9 @@
     <text x="71.0"
           y="16"
           dominant-baseline="middle">YouTube subscribers</text>
-    <text x="163.5"
+    <text x="163.0"
           y="16"
           dominant-baseline="middle"
-          font-weight="bold">190</text>
+          font-weight="bold">191</text>
   </g>
 </svg>
