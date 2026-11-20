@@ -86,7 +86,7 @@
       <path d="M67 390L241 443L416 390" fill="none" stroke="#00dff7" stroke-width="1.7" opacity=".8" />
       <path d="M78 406L241 354L405 406V738H78Z" fill="url(#smallGrid)" opacity=".75" />
   <path transform="translate(125 173) scale(0.45)" d="M256 78 L310 190 L434 207 L345 294 L366 419 L256 360 L146 419 L167 294 L78 207 L202 190 Z" fill="#031b2a" stroke="#00bfff" stroke-width="7" stroke-linejoin="round" filter="url(#glowCyan)" />
-      <text x="241" y="489" class="value cyan" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:54px;font-weight:700;font-style:normal;letter-spacing:0.0000">4</text>
+      <text x="241" y="489" class="value cyan" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size:54px;font-weight:700;font-style:normal;letter-spacing:0.0000">7</text>
       <text x="241" y="557" class="label" style="font-family:DejaVu Sans Mono, Liberation Mono, monospace;font-size: 32px;font-weight:400;font-style:normal;letter-spacing:0.0000">Stars</text>
       <path d="M79 701L93 697L105 682L118 662L131 645L144 650L155 640L168 652L180 663L194 668L207 657L220 665L232 657L245 663L257 647L271 631L283 635L294 624L307 633L319 626L333 635L346 614L359 620L371 602L380 591L392 587L405 612V738H79Z" fill="url(#cyanArea)" />
       <path class="trend" stroke="#00eaff" filter="url(#glowCyan)" d="M79 701L93 697L105 682L118 662L131 645L144 650L155 640L168 652L180 663L194 668L207 657L220 665L232 657L245 663L257 647L271 631L283 635L294 624L307 633L319 626L333 635L346 614L359 620L371 602L380 591" />
