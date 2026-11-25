@@ -3,8 +3,8 @@
     height="24"
     viewBox="0 0 119 24"
     role="img"
-    aria-label="GitHub stars: 5">
-  <title>GitHub stars: 5</title>
+    aria-label="GitHub stars: 4">
+  <title>GitHub stars: 4</title>
   <rect width="91" height="24" rx="4"
         fill="#1e293b"/>
   <rect x="91" width="28" height="24"
@@ -21,6 +21,6 @@
     <text x="105.0"
           y="16"
           dominant-baseline="middle"
-          font-weight="bold">5</text>
+          font-weight="bold">4</text>
   </g>
 </svg>
